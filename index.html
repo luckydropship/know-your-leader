@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Leader - Presidential Campaign Finance Tracker</title>
+    
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🇺🇸 Know Your Leader</h1>
+                <p class="subtitle">Presidential Campaign Finance Tracker</p>
+                <p class="tagline">Follow the money. Know your candidates.</p>
+            </div>
+        </header>
+        
+        <!-- Stats Section -->
+        <section class="stats" id="statsSection">
+            <!-- Dynamic content from app.js -->
+        </section>
+        
+        <!-- Search Component Mount -->
+        <div id="searchBoxContainer"></div>
+        
+        <!-- Main Content Area -->
+        <main id="candidatesContainer">
+            <div class="loading-state" id="loadingIndicator">
+                <div class="spinner"></div>
+                <p>Loading candidate data...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Component Mount Points -->
+    <div id="candidateModalRoot"></div>
+
+    <!-- Script Loading Order Matters! -->
+    <script src="utils/constants.js"></script>
+    <script src="utils/formatters.js"></script>
+    <script src="utils/debounce.js"></script>
+    
+    <script src="services/dataService.js"></script>
+    <script src="services/s3Service.js"></script>
+    
+    <script src="components/SearchBox/SearchBox.js"></script>
+    <script src="components/CandidateCard/CandidateCard.js"></script>
+    <script src="components/PartySection/PartySection.js"></script>
+    <script src="components/CandidateModal/CandidateModal.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
