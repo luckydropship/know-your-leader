@@ -56,8 +56,35 @@ function getMockCandidates(): Candidate[] {
   return [
     {
       id: 'P00000001',
-      name: 'Demo Candidate',
+      name: 'Demo Candidate 1',
       party: 'DEMOCRATIC PARTY',
+      state: 'US',
+      office: 'President',
+      electionCycles: '2024',
+      status: 'Active'
+    },
+    {
+      id: 'P00000002',
+      name: 'Demo Candidate 2',
+      party: 'REPUBLICAN PARTY',
+      state: 'US',
+      office: 'President',
+      electionCycles: '2024',
+      status: 'Active'
+    },
+    {
+      id: 'P00000003',
+      name: 'Demo Candidate 3',
+      party: 'LIBERTARIAN PARTY',
+      state: 'US',
+      office: 'President',
+      electionCycles: '2024',
+      status: 'Active'
+    },
+    {
+      id: 'P00000004',
+      name: 'Demo Candidate 4',
+      party: 'GREEN PARTY',
       state: 'US',
       office: 'President',
       electionCycles: '2024',

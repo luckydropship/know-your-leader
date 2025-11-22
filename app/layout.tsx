@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Know Your Leader - Presidential Campaign Finance Tracker',
+  title: 'Know Your Leader',
   description: 'Follow the money. Know your candidates.',
 };
 
